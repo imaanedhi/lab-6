@@ -1,4 +1,4 @@
-def encode(original_password): # this is my first edit
+def encode(original_password):
     result = ""
     for numbers in original_password:
         new_numbers = str((int(numbers) + 3) % 10 )
@@ -6,7 +6,12 @@ def encode(original_password): # this is my first edit
     return result
 
 def decode(password):
-    pass
+    result = " "
+
+    for numbers in password:
+        new_numbers = str((int(numbers) - 3) % 10)
+        result += new_numbers
+    return result
 
 def menu():
     print("Menu")
