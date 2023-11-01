@@ -30,7 +30,7 @@ def main():
             original_password = encode(original_password)
             print("Your password has been encoded and stored! ")
         elif user_input == 2:
-            pass
+            print(f"The encoded password is {original_password}, and the original password is{decode(original_password)}.")
         else:
             test = False
 
